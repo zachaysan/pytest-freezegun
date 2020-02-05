@@ -36,7 +36,8 @@ Usage
 -----
 
 Freeze time by using the ``freezer`` fixture::
-
+    import pytest_freezegun
+    
     def test_frozen_date(freezer):
         now = datetime.now()
         time.sleep(1)
